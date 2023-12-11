@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6677136295773994676}
   - component: {fileID: 8722546721708377863}
   m_Layer: 0
-  m_Name: Bad Coin
+  m_Name: BadCoin
   m_TagString: Bad Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
