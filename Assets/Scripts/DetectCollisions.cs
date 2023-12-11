@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
-{
-    private int Points = 0;
 
+{
+
+    [SerializeField] private GameObject[] GoodCoin;
+    public float Points = 0f;
+    public float Lifes = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +20,19 @@ public class DetectCollisions : MonoBehaviour
     void Update()
     {
         Debug.Log(message:Points);
+        Debug.Log(message: Lifes);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider CoinsPrefabArray)
     {
-        Destroy(other.gameObject);
+        Lifes = Lifes - 1;
         Points = Points + 5;
+    }
+
+    If(Collider GoodCoin)
+    {
+        Debug.LogWarning(message: GoodCoin);
+
     }
 }
 

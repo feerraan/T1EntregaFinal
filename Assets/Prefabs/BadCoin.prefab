@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 558312396147292739}
   - component: {fileID: 6677136295773994676}
   - component: {fileID: 8722546721708377863}
-  - component: {fileID: -7537301432120506634}
-  - component: {fileID: 4081526647702731929}
+  - component: {fileID: 3691424032541984447}
   m_Layer: 0
   m_Name: BadCoin
   m_TagString: Bad Coin
@@ -107,22 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-7537301432120506634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881301801498186842}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da835cc4f2171b84fb9db32aef9fb2eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinsPrefabsArray: []
-  StartDelay: 2
-  SpawnInterval: 1.5
---- !u!114 &4081526647702731929
+--- !u!114 &3691424032541984447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,6 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1881301801498186842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53772424be794d641b5842c046fe5c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 96dd8121177e7f343804b9e657ad147d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
