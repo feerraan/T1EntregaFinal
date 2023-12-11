@@ -15,7 +15,6 @@ public class DestroyBad : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(message: Lifes);
 
         tiempo += Time.deltaTime;
         if (tiempo > 3)
@@ -26,7 +25,8 @@ public class DestroyBad : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
         Lifes = Lifes -1;
+        Destroy(gameObject);
+        
     }
 }

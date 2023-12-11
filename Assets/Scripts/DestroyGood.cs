@@ -16,7 +16,6 @@ public class DestroyGood : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(message: Points);
 
         tiempo += Time.deltaTime;
         if (tiempo > 3)
@@ -28,7 +27,8 @@ public class DestroyGood : MonoBehaviour
 
      private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
         Points = Points + 5;
+        Destroy(gameObject);
+        
     }
 }
