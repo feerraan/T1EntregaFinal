@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1896109321660805056}
   - component: {fileID: 5971835972741001243}
   - component: {fileID: 5495478563784520388}
+  - component: {fileID: 9080207016749442784}
+  - component: {fileID: -2694158820422159977}
   m_Layer: 0
   m_Name: GoodCoin
   m_TagString: Good Coin
@@ -105,3 +107,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9080207016749442784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104455315734104562}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da835cc4f2171b84fb9db32aef9fb2eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoinsPrefabsArray: []
+  StartDelay: 2
+  SpawnInterval: 1.5
+--- !u!114 &-2694158820422159977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104455315734104562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53772424be794d641b5842c046fe5c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

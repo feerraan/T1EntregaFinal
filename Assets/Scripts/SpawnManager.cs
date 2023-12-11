@@ -12,7 +12,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 9.5f;
     private float SpawnRangeZ = 7f;
 
-    private float tiempo = 0f;
+    
 
     [SerializeField] private float StartDelay = 2f;
     [SerializeField] private float SpawnInterval = 1.5f;
@@ -30,9 +30,7 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
-     
-        Debug.Log(tiempo);
+        
     }
 
     private void SpawnRandomCoin()
@@ -41,10 +39,6 @@ public class SpawnManager : MonoBehaviour
         Instantiate(CoinsPrefabsArray[CoinsIndex],
             RandomSpawnPos(),
             Quaternion.Euler(0, 180, 0));
-        if (tiempo > 3)
-        {
-            Destroy(this);
-        }
     }
 
     private Vector3 RandomSpawnPos()
