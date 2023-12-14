@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 558312396147292739}
   - component: {fileID: 6677136295773994676}
   - component: {fileID: 8722546721708377863}
-  - component: {fileID: 3691424032541984447}
+  - component: {fileID: 6501492741088846296}
   m_Layer: 0
   m_Name: BadCoin
   m_TagString: Bad Coin
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3691424032541984447
+--- !u!114 &6501492741088846296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1881301801498186842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96dd8121177e7f343804b9e657ad147d, type: 3}
+  m_Script: {fileID: 11500000, guid: d70abe0055c89b14aaa198f8ba84ea1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lifes: 0

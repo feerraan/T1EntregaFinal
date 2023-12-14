@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 514298105402617215}
   - component: {fileID: 1896109321660805056}
   - component: {fileID: 5971835972741001243}
-  - component: {fileID: -2639829646764321979}
   - component: {fileID: 3299707816971881869}
+  - component: {fileID: 609496808374285159}
   m_Layer: 0
   m_Name: GoodCoin
   m_TagString: Good Coin
@@ -85,19 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-2639829646764321979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5104455315734104562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 272a80e61fa9bd94e92b380141950b3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Points: 0
 --- !u!65 &3299707816971881869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -119,3 +106,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &609496808374285159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104455315734104562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d70abe0055c89b14aaa198f8ba84ea1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

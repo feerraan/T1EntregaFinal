@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
 
+    private const string buena = "Good Coin";
+    private const string mala = "Bad Coin";
+
     private float horitzontalInput;
 
     private float verticalInput;
@@ -14,10 +17,19 @@ public class PlayerController : MonoBehaviour
 
     private float zRange = 7f;
 
+    private int puntos = 0;
+
+    private int vidas = 3;
+
+    public bool Win;
+
+    public bool GameOver;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log($"Tienes {puntos} puntos");
+        Debug.Log($"Tienes {vidas} vidas");
     }
 
     // Update is called once per frame
@@ -65,4 +77,36 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag(buena))
+        {
+            Destroy(collision.gameObject);
+            puntos = puntos + 5;
+            Debug.Log($"Tienes {puntos} puntos");
+
+            if (puntos > 50)
+            {
+                Win = true;
+                Debug.Log($"Has Ganado");
+
+            }
+        }
+
+        if (collision.gameObject.CompareTag(mala))
+        {
+            Destroy(collision.gameObject);
+            vidas = vidas - 1;
+            Debug.Log ($"Tienes {vidas} vidas");
+
+            if (vidas == 0)
+            {
+                GameOver = true;
+                Debug.Log($"Has Perdido");
+
+            }
+        }
     }
+
+}
