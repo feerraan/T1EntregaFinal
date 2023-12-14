@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private AudioSource playerAudioSource;
+    [SerializeField] private AudioSource cameraAudioSource;
     [SerializeField] private float speed = 10f;
+
+    [SerializeField] private AudioClip bonaClip;
 
     private const string buena = "Good Coin";
     private const string mala = "Bad Coin";
@@ -85,8 +89,9 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             puntos = puntos + 5;
             Debug.Log($"Tienes {puntos} puntos");
+            
 
-            if (puntos > 50)
+            if (puntos == 50)
             {
                 Win = true;
                 Debug.Log($"Has Ganado");
